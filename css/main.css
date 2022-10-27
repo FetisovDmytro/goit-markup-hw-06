@@ -872,7 +872,7 @@ color: var(--Blue-color);
   .modal-form {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    
   }
 
   .form-title {
@@ -897,6 +897,7 @@ color: var(--Blue-color);
 
   .form-control {
     position: relative;
+   margin-bottom: 10px;
   }
 
 
@@ -1069,7 +1070,11 @@ color: var(--Blue-color);
     border-radius: 4px;
     color: var(--white-bgc);
     cursor: pointer;
-    transition: borfer-color var(--transition-dur-n-fuc);
+    transition: background-color var(--transition-dur-n-fuc);
+  }
+
+  .btn-sub-footer:hover , .btn-sub-footer:focus {
+    background-color: var(--bgc-btn-act);
   }
 
   .btn-sub-footer::after {
