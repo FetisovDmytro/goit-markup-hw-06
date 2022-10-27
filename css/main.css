@@ -996,7 +996,6 @@ color: var(--Blue-color);
     text-decoration: underline;
   }
  
-
   .modal-form-submit {
     min-width: 200px;
     align-items: center;
@@ -1019,7 +1018,6 @@ color: var(--Blue-color);
   .modal-form-submit:focus , .modal-form-submit:hover {
     background-color: var(--bgc-btn-act);
   }
-
 
   /* Форма в футері */
 
