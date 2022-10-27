@@ -854,6 +854,7 @@ color: var(--Blue-color);
     border: 1px solid var(--icon-btn-border);
     border-radius: 50%;
     cursor: pointer;
+    transition: fill var(--transition-dur-n-fuc);
   }
 
   .modal-icon-close:hover {
@@ -871,6 +872,7 @@ color: var(--Blue-color);
   .modal-form {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 
   .form-title {
@@ -905,6 +907,7 @@ color: var(--Blue-color);
     border: 1px solid var(--input-border-color);
     border-radius: 4px;
     outline: none;
+    transition: border-color var(--transition-dur-n-fuc);
   }
 
   .form-input:focus {
@@ -989,6 +992,7 @@ color: var(--Blue-color);
 
   .chekbox-link {
     color: var(--Blue-color);
+    text-decoration: underline;
   }
  
 
@@ -1006,5 +1010,76 @@ color: var(--Blue-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-dur-n-fuc) ;
     
+  }
+
+  .modal-form-submit:focus , .modal-form-submit:hover {
+    background-color: var(--bgc-btn-act);
+  }
+
+
+  /* Форма в футері */
+
+  .footer-form {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+  }
+
+  .footer-text {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-bgc);
+  }
+
+  .footer-input {
+    min-width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color:var(--white-bgc) ;
+    }
+
+  .footer-input:focus {
+    outline: none;
+    border-color: var(--Blue-color);
+  }
+
+  /* Кнопка в футері */
+
+  .btn-sub-footer {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 10px 62px 10px 28px;
+    background-color: var(--Blue-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-bgc);
+    cursor: pointer;
+    transition: borfer-color var(--transition-dur-n-fuc);
+  }
+
+  .btn-sub-footer::after {
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    position: absolute;
+    content:'';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    fill: var(--white-bgc);
   }
